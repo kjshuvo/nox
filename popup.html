@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nox - Force Dark Mode Chromium</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <img src="icons/icon48.png" alt="Nox" class="logo">
+        <h1>Nox</h1>
+      </div>
+      <div class="card-body">
+        <div class="toggle-group">
+          <span>Enabled</span>
+          <label class="switch">
+            <input type="checkbox" id="on-off" checked aria-label="Enable dark mode">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <button type="button" id="ignore-site" class="btn">Ignore This Site</button>
+        <button type="button" id="remove-site" class="btn" hidden>Don't Ignore this site</button>
+      </div>
+    </div>
+    <div class="footer">
+      Created by KJ Shuvo · <a href="https://brainywebs.com" target="_blank" rel="noopener">BrainyWebs.com</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

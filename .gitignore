@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Editor / tooling
+.vscode/
+.idea/
+.impeccable/
+.claude/
+.playwright-mcp/
+*.log
+
+# Dependencies (none today — future-proof)
+node_modules/
+
+# Build / packaging artifacts
+*.zip
+*.crx
+*.pem
