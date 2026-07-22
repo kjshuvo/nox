@@ -147,6 +147,9 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   margin: 0 0 40px;
 }
 .chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -154,6 +157,7 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   font-size: 0.85rem;
   color: var(--text-dim);
 }
+.chips li .icon { width: 1em; height: 1em; }
 .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; width: 100%; }
 .shots figure { margin: 0; }
 .shots img { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
