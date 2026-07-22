@@ -220,6 +220,60 @@ p { margin: 0 0 1em; color: var(--text-dim); }
 .accordion details[open] summary::after { content: "\2212"; }
 .accordion details p { padding-bottom: 14px; margin: 0; }
 
+/* Trust band */
+.trust {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+.trust-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.trust-grid li { display: flex; gap: 12px; align-items: flex-start; }
+.t-icon { font-size: 1.5rem; line-height: 1.2; flex-shrink: 0; }
+.trust-grid strong { display: block; color: var(--text); font-size: 0.98rem; margin-bottom: 2px; }
+.trust-grid span { color: var(--text-mute); font-size: 0.88rem; }
+
+/* Languages */
+.languages { padding: 72px 0; border-top: 1px solid var(--border); text-align: center; }
+.lang-chips {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lang-chips li {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  color: var(--text-dim);
+}
+
+/* Get involved */
+.involve { padding: 72px 0; border-top: 1px solid var(--border); }
+.involve h2 { text-align: center; max-width: 18ch; margin: 0 auto 8px; }
+.involve-lead { text-align: center; max-width: 60ch; margin: 0 auto 32px; }
+.involve-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.involve-grid .card p:last-child { margin-bottom: 0; }
+.muted { color: var(--text-mute); font-size: 0.9rem; margin: 10px 0 0; }
+.muted a { color: var(--text-mute); }
+.muted a:hover { color: var(--text-dim); }
+
 /* Footer */
 .footer { border-top: 1px solid var(--border); padding: 40px 0; }
 .footer-inner { display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; }
@@ -257,6 +311,8 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   .feature-grid, .steps { grid-template-columns: 1fr; }
   .shots { grid-template-columns: 1fr; }
   .hero { padding: 56px 0 40px; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .involve-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

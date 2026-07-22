@@ -53,7 +53,8 @@
       {"@type":"Question","name":"Is Nox private?","acceptedAnswer":{"@type":"Answer","text":"Completely. Nox makes no network requests, has no telemetry, no servers, and no account. Your settings never leave your browser. It requests only activeTab and storage permissions."}},
       {"@type":"Question","name":"Does Nox slow down my browser?","acceptedAnswer":{"@type":"Answer","text":"No. Nox uses a single GPU-composited CSS filter toggled by one class on the page. No per-element loops, no observers, no polling. It runs fully offline."}},
       {"@type":"Question","name":"Which browsers does Nox support?","acceptedAnswer":{"@type":"Answer","text":"Any Chromium-based browser: Chrome, Edge, Brave, Arc, Vivaldi and Opera. Firefox is not yet supported."}},
-      {"@type":"Question","name":"How do I install Nox?","acceptedAnswer":{"@type":"Answer","text":"Download the repository, open chrome://extensions, enable Developer mode, click Load unpacked, and select the folder. It takes about 30 seconds."}}
+      {"@type":"Question","name":"How do I install Nox?","acceptedAnswer":{"@type":"Answer","text":"Download the repository, open chrome://extensions, enable Developer mode, click Load unpacked, and select the folder. It takes about 30 seconds."}},
+      {"@type":"Question","name":"What languages does Nox support?","acceptedAnswer":{"@type":"Answer","text":"Nox ships in 11 languages: English, Spanish, French, German, Portuguese (Brazil), Russian, Arabic, Hindi, Bengali, Japanese, and Simplified Chinese. It follows your browser's language automatically, and more are added by the community."}}
     ]
   }
   </script>
@@ -110,6 +111,42 @@
             <figcaption>After: one click, dark</figcaption>
           </figure>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust" aria-label="Why Nox is safe and private">
+      <div class="container">
+        <ul class="trust-grid">
+          <li>
+            <span class="t-icon" aria-hidden="true">🔓</span>
+            <div>
+              <strong>Open source</strong>
+              <span>Full source code on GitHub, MIT licensed. Anyone can read it, audit it, or self-host it.</span>
+            </div>
+          </li>
+          <li>
+            <span class="t-icon" aria-hidden="true">🔒</span>
+            <div>
+              <strong>Private by design</strong>
+              <span>No accounts, no tracking, no analytics. Your data never leaves your browser.</span>
+            </div>
+          </li>
+          <li>
+            <span class="t-icon" aria-hidden="true">⚡</span>
+            <div>
+              <strong>Lightning fast</strong>
+              <span>One GPU-composited CSS filter. You won't notice any impact on browser performance.</span>
+            </div>
+          </li>
+          <li>
+            <span class="t-icon" aria-hidden="true">🛡️</span>
+            <div>
+              <strong>Secure &amp; offline</strong>
+              <span>Runs 100% offline with only two permissions. Nothing to phish, nothing to phone home.</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -183,6 +220,27 @@
       </div>
     </section>
 
+    <!-- LANGUAGES -->
+    <section class="languages" id="languages">
+      <div class="container narrow">
+        <h2>Speaks your language</h2>
+        <p>Nox already ships in 11 languages and follows your browser's language automatically. More are on the way, and you can help add yours.</p>
+        <ul class="lang-chips">
+          <li>English</li>
+          <li>Español</li>
+          <li>Français</li>
+          <li>Deutsch</li>
+          <li>Português (BR)</li>
+          <li>Русский</li>
+          <li>العربية</li>
+          <li>हिन्दी</li>
+          <li>বাংলা</li>
+          <li>日本語</li>
+          <li>简体中文</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="container narrow">
@@ -193,6 +251,29 @@
           <details><summary>Does it slow down my browser?</summary><p>No. A single GPU-composited CSS filter, toggled by one class. No loops, observers or polling. Fully offline.</p></details>
           <details><summary>Which browsers are supported?</summary><p>Any Chromium browser: Chrome, Edge, Brave, Arc, Vivaldi, Opera. Firefox is not yet supported.</p></details>
           <details><summary>How do I install it?</summary><p>Download the repo, open <code>chrome://extensions</code>, enable Developer mode, click Load unpacked, and select the folder. About 30 seconds.</p></details>
+          <details><summary>What languages does Nox support?</summary><p>Nox ships in 11 languages — English, Spanish, French, German, Portuguese (Brazil), Russian, Arabic, Hindi, Bengali, Japanese, and Simplified Chinese — and follows your browser's language automatically. More are added by the community over time.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section class="involve" id="contribute">
+      <div class="container">
+        <h2>Nox is built in the open. Come help shape it.</h2>
+        <p class="involve-lead">Nox is a free, open-source community project. Whether you write code or just speak another language, there's a meaningful way to contribute.</p>
+        <div class="involve-grid">
+          <div class="card">
+            <h3>💻 Improve Nox</h3>
+            <p>Found a bug, or have a feature in mind? Open an issue or send a pull request. Small fixes and big ideas are equally welcome, and the codebase is small and friendly.</p>
+            <p><a class="btn btn-primary" href="https://github.com/kjshuvo/nox/blob/main/CONTRIBUTING.md#-ways-to-contribute" target="_blank" rel="noopener">Read the contributor guide →</a></p>
+            <p class="muted"><a href="https://github.com/kjshuvo/nox/issues" target="_blank" rel="noopener">Browse open issues</a></p>
+          </div>
+          <div class="card">
+            <h3>🌍 Translate Nox</h3>
+            <p>Nox already reaches users in 11 languages. If yours is missing or could read more naturally, add it. Translating is just editing one JSON file, no coding required.</p>
+            <p><a class="btn btn-ghost" href="https://github.com/kjshuvo/nox/blob/main/CONTRIBUTING.md#-translating-nox" target="_blank" rel="noopener">How to translate →</a></p>
+            <p class="muted"><a href="https://github.com/kjshuvo/nox/tree/main/_locales" target="_blank" rel="noopener">Browse the <code>_locales</code> folder</a></p>
+          </div>
         </div>
       </div>
     </section>
