@@ -28,6 +28,14 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.hero-badge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
 code {
   font-family: var(--mono);
   font-size: 0.9em;
@@ -211,15 +219,6 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   color: #fff;
   font-weight: 700;
   margin-bottom: 12px;
-}
-.code-snippet { margin: 28px 0; text-align: center; }
-.code-snippet code {
-  display: inline-block;
-  background: var(--bg-elev-2);
-  border: 1px solid var(--border);
-  color: #b9b5e0;
-  padding: 12px 18px;
-  border-radius: 10px;
 }
 .how-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
