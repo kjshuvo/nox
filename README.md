@@ -15,6 +15,8 @@
 
 **⭐ If this saves your eyes, please [star the repo](https://github.com/kjshuvo/nox/stargazers) — it helps others find it.**
 
+<img src="docs/nox-banner.png" alt="Nox — force dark mode on every website" width="860">
+
 </div>
 
 <!--
