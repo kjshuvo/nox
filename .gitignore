@@ -1,0 +1,4 @@
+# Tool artifacts — never publish these to the Pages branch
+.impeccable/
+.playwright-mcp/
+.DS_Store
