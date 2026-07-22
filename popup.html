@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html dir="auto">
 <head>
-  <title>Nox - Force Dark Mode Chromium</title>
+  <meta charset="utf-8">
+  <title data-i18n="popupTitle"></title>
   <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
@@ -10,21 +11,28 @@
       <div class="card-header">
         <img src="icons/icon48.png" alt="Nox" class="logo">
         <h1>Nox</h1>
+        <div class="lang-switcher">
+          <button type="button" id="lang-btn" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language" title="Language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </button>
+          <ul id="lang-menu" class="lang-menu" role="menu" hidden></ul>
+        </div>
       </div>
       <div class="card-body">
         <div class="toggle-group">
-          <span>Enabled</span>
+          <span data-i18n="statusEnabled"></span>
           <label class="switch">
-            <input type="checkbox" id="on-off" checked aria-label="Enable dark mode">
+            <input type="checkbox" id="on-off" checked data-i18n-aria-label="toggleAriaLabel">
             <span class="slider round"></span>
           </label>
         </div>
-        <button type="button" id="ignore-site" class="btn">Ignore This Site</button>
-        <button type="button" id="remove-site" class="btn" hidden>Don't Ignore this site</button>
+        <button type="button" id="ignore-site" class="btn" data-i18n="ignoreSite"></button>
+        <button type="button" id="remove-site" class="btn" hidden data-i18n="stopIgnoring"></button>
       </div>
-    </div>
-    <div class="footer">
-      Created by KJ Shuvo · <a href="https://brainywebs.com" target="_blank" rel="noopener">BrainyWebs.com</a>
     </div>
   </div>
   <script src="popup.js"></script>

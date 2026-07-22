@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "Nox - Forçar modo escuro",
+    "description": "The extension name shown in the browser toolbar, the extensions page, and the install dialog. 'Nox' is the brand name (the Roman goddess of night) and should NOT be translated."
+  },
+  "extDescription": {
+    "message": "Force o modo escuro em todos os sites — inclusive onde o modo escuro nativo do navegador falha, como no GitHub e no Google Docs.",
+    "description": "Short description shown on the extensions page and the store listing."
+  },
+  "popupTitle": {
+    "message": "Nox - Forçar modo escuro",
+    "description": "Window title of the toolbar popup."
+  },
+  "toggleAriaLabel": {
+    "message": "Ativar modo escuro",
+    "description": "Invisible screen-reader (accessibility) label for the on/off switch."
+  },
+  "statusEnabled": {
+    "message": "Ativado",
+    "description": "Label shown next to the toggle when dark mode is ON."
+  },
+  "statusDisabled": {
+    "message": "Desativado",
+    "description": "Label shown next to the toggle when dark mode is OFF."
+  },
+  "ignoreSite": {
+    "message": "Ignorar este site",
+    "description": "Button: add the current site to the ignore list so it keeps its original (light) theme."
+  },
+  "stopIgnoring": {
+    "message": "Deixar de ignorar este site",
+    "description": "Button: remove the current site from the ignore list so dark mode applies to it again."
+  }
+}

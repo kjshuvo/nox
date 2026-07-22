@@ -11,10 +11,50 @@ You don't have to write code to help:
 
 - 🐛 **Report bugs** — sites where dark mode looks broken, the toggle misbehaving, etc. ([Open a bug report](.github/ISSUE_TEMPLATE/bug_report.md))
 - 💡 **Suggest features** — ignore-list improvements, scheduling, site-specific rules… ([Request a feature](.github/ISSUE_TEMPLATE/feature_request.md))
-- 🌍 **Translate the popup UI** into your language.
+- 🌍 **Translate the popup UI** into your language — see [Translating Nox](#-translating-nox) (one file, no code).
 - 📝 **Improve the docs / README** — clearer wording, better install steps, screenshots.
 - ⭐ **Star & share** the repo — helps other people find it.
 - 💻 **Submit code** — see below.
+
+## 🌍 Translating Nox
+
+Nox ships with starter translations for several major languages (see the `_locales/` folder), and adding more takes a few minutes with **zero code** — you only translate one file. **All translations are community-maintained: corrections, improvements, and new languages are all welcome.**
+
+### Improving an existing translation
+
+Spotted a typo, awkward phrasing, or a more natural wording in a language that's already there? Please send a fix:
+
+1. Open that locale's file, e.g. `_locales/es/messages.json`.
+2. Edit only the `"message"` values you want to improve (keep the JSON keys and the `"description"` fields unchanged).
+3. Open a PR — or if you're unsure, [open an issue](https://github.com/kjshuvo/nox/issues/new) tagged `translation` describing the change.
+
+Native speakers reviewing each other's wording is exactly how these get better — don't be shy, even a single-word tweak helps.
+
+### How Chrome matches languages
+
+Every user-visible string lives in `_locales/<locale>/messages.json`. Chrome automatically loads the file that best matches the user's browser language, falling back to English (`_locales/en`) when no match exists.
+
+### Add your language
+
+1. **Pick your locale code** from Chrome's [supported locales](https://developer.chrome.com/docs/extensions/reference/api/i18n#supported-locales) — e.g. `fr`, `de`, `pt_BR`, `zh_CN`, `ja`, `hi`, `ar`.
+2. **Copy the source file:**
+
+   ```
+   _locales/en/messages.json  →  _locales/<your-locale>/messages.json
+   ```
+
+3. **Translate only the `"message"` value** for each key. Leave the JSON keys (e.g. `"extName"`) and the `"description"` fields untouched — the descriptions exist to give you context.
+4. **Keep the brand name "Nox" untranslated** wherever it appears.
+5. Reload the unpacked extension and open a PR with your new `_locales/<your-locale>/` folder.
+
+### Good to know
+
+- Translate human text only — never the JSON keys, and don't add or remove HTML/code inside a message.
+- Punctuation can differ by language (e.g. Spanish «¿», CJK spacing) — use what's natural for yours.
+- To preview locally, load the unpacked extension, then add/select your language at the top of `chrome://settings/languages` and reload the tab.
+- If a string is ambiguous, the `"description"` on that key explains where it appears. Still unsure? Open an issue tagged `translation`.
+
+The English file (`_locales/en/messages.json`) is the source of truth — when new strings land there, the `description` on each new key tells translators what changed.
 
 ## 🚀 Getting set up to code
 
@@ -35,6 +75,7 @@ There is **no build step, no dependencies, no bundler**.
 | `background.js` | Service worker; seeds defaults on install only. |
 | `popup.html` / `popup.css` / `popup.js` | The toolbar popup UI and its logic. |
 | `icons/` | Icons + source artwork. |
+| `_locales/` | Translations — one `messages.json` per language. Add yours in minutes (see above). |
 
 ## 🧪 Testing
 
@@ -68,11 +109,11 @@ To match the existing code:
 4. If you're fixing a specific issue, reference it (`Closes #123`).
 5. Fill in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md).
 
-Good first PRs are tagged [`good first issue`](../../labels/good%20first%20issue) — start there if you're new to the codebase.
+Good first PRs are tagged [`good first issue`](https://github.com/kjshuvo/nox/labels/good%20first%20issue) — start there if you're new to the codebase.
 
 ## 💬 Questions & ideas
 
-For anything that isn't a bug or feature request, feel free to [open a discussion](../../discussions) (if enabled) or just open an issue labeled `question`.
+For anything that isn't a bug or feature request, feel free to [open a discussion](https://github.com/kjshuvo/nox/discussions) (if enabled) or just open an issue labeled `question`.
 
 ## 📜 Code of conduct
 

@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "Nox - डार्क मोड लागू करें",
+    "description": "The extension name shown in the browser toolbar, the extensions page, and the install dialog. 'Nox' is the brand name (the Roman goddess of night) and should NOT be translated."
+  },
+  "extDescription": {
+    "message": "हर वेबसाइट पर डार्क मोड लागू करें — यहाँ तक कि जहाँ ब्राउज़र का पहले से मौजूद डार्क मोड काम नहीं करता, जैसे GitHub और Google Docs।",
+    "description": "Short description shown on the extensions page and the store listing."
+  },
+  "popupTitle": {
+    "message": "Nox - डार्क मोड लागू करें",
+    "description": "Window title of the toolbar popup."
+  },
+  "toggleAriaLabel": {
+    "message": "डार्क मोड सक्षम करें",
+    "description": "Invisible screen-reader (accessibility) label for the on/off switch."
+  },
+  "statusEnabled": {
+    "message": "सक्षम",
+    "description": "Label shown next to the toggle when dark mode is ON."
+  },
+  "statusDisabled": {
+    "message": "अक्षम",
+    "description": "Label shown next to the toggle when dark mode is OFF."
+  },
+  "ignoreSite": {
+    "message": "इस साइट को अनदेखा करें",
+    "description": "Button: add the current site to the ignore list so it keeps its original (light) theme."
+  },
+  "stopIgnoring": {
+    "message": "इस साइट को अनदेखा करना बंद करें",
+    "description": "Button: remove the current site from the ignore list so dark mode applies to it again."
+  }
+}

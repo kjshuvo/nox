@@ -28,7 +28,6 @@ body {
   background-color: var(--card-background);
   border-radius: 12px;
   border: 1px solid var(--border-color);
-  overflow: hidden;
 }
 
 .card-header {
@@ -37,6 +36,87 @@ body {
   gap: 12px;
   padding: 16px;
   border-bottom: 1px solid var(--border-color);
+}
+
+.lang-switcher {
+  position: relative;
+  margin-left: auto;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-btn:hover,
+.lang-btn[aria-expanded="true"] {
+  background-color: var(--border-color);
+  color: var(--primary-color);
+}
+
+.lang-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 168px;
+  max-height: 224px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  z-index: 20;
+}
+
+.lang-menu[hidden] {
+  display: none;
+}
+
+.lang-menu li button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--text-color);
+  font-size: 0.9em;
+  text-align: start;
+  cursor: pointer;
+}
+
+.lang-menu li button:hover {
+  background-color: var(--border-color);
+}
+
+.lang-menu li button[aria-current="true"] {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.lang-menu .check {
+  color: var(--primary-color);
 }
 
 .logo {
@@ -142,19 +222,4 @@ input:checked + .slider:before {
 
 .btn[hidden] {
   display: none;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.75em;
-  color: #888;
-}
-
-.footer a {
-  color: #BB86FC;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }

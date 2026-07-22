@@ -1,14 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Nox - Force Dark Mode Chromium",
-  "version": "1.0",
-  "description": "Force dark mode on every website — even where your browser's built-in dark mode fails, like GitHub and Google Docs.",
-  "author": "KJ Shuvo",
-  "homepage_url": "https://brainywebs.com",
+  "default_locale": "en",
+  "name": "__MSG_extName__",
+  "version": "1.0.0",
+  "description": "__MSG_extDescription__",
+  "homepage_url": "https://github.com/kjshuvo/nox",
   "permissions": [
     "activeTab",
     "storage"
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
   "background": {
     "service_worker": "background.js"
   },
