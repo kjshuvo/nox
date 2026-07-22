@@ -61,14 +61,9 @@ Chrome, Edge, and Brave all ship a dark-mode toggle, but it silently fails on ma
 
 **The 30-second install:**
 
-1. **Download this repo:** click the green **`<> Code`** button at the top of this page → **Download ZIP** → unzip it. *(Or `git clone` it if you use Git.)*
-2. **Open the extensions page** in your browser:
-   - **Chrome / Brave:** paste `chrome://extensions` in the address bar
-   - **Edge:** paste `edge://extensions`
-   - **Arc / Vivaldi / Opera:** use the same `chrome://extensions` page
-3. **Turn on Developer mode** (the toggle in the top-right corner).
-4. **Click `Load unpacked`** and select the folder you just unzipped.
-5. **Pin it** 📌 to your toolbar, click the icon, and enjoy dark mode everywhere.
+1. **Download & unzip:** click the green **`<> Code`** button at the top of this page → **Download ZIP** → unzip it. *(Or `git clone` it if you use Git.)*
+2. **Load unpacked:** open `chrome://extensions` (Edge: `edge://extensions`), turn on **Developer mode**, click **`Load unpacked`**, and select the unzipped folder.
+3. **Pin & enjoy:** pin Nox 📌 to your toolbar, click the icon, and every page goes dark.
 
 <details>
 <summary><b>📸 Step-by-step with screenshots</b></summary>
