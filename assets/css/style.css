@@ -35,6 +35,7 @@ code {
   padding: 0.1em 0.4em;
   border-radius: 6px;
 }
+.icon { width: 1.1em; height: 1.1em; fill: currentColor; vertical-align: -0.18em; }
 
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 .narrow { max-width: 760px; }
@@ -117,6 +118,21 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   background: radial-gradient(120% 80% at 50% 0%, #1b1730 0%, transparent 60%);
 }
 .hero-inner { display: flex; flex-direction: column; align-items: center; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.hero-badge:hover { border-color: var(--accent); color: var(--text); text-decoration: none; }
 .hero h1 { max-width: 14ch; }
 .hero .lead { max-width: 60ch; font-size: 1.12rem; }
 .hero .lead strong { color: var(--text); }

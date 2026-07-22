@@ -51,6 +51,7 @@
     "mainEntity": [
       {"@type":"Question","name":"Does Nox work on GitHub, Google Docs and Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Nox applies a real dark theme to any site, including the ones the browser's built-in dark mode ignores: GitHub, Google Docs, Google Sheets and many more."}},
       {"@type":"Question","name":"Is Nox private?","acceptedAnswer":{"@type":"Answer","text":"Completely. Nox makes no network requests, has no telemetry, no servers, and no account. Your settings never leave your browser. It requests only activeTab and storage permissions."}},
+      {"@type":"Question","name":"Why does Nox exist, and is it safe to use?","acceptedAnswer":{"@type":"Answer","text":"Most dark-mode extensions are closed source, and many quietly send your data to external servers. Nox was built to be the opposite: fully open source under the MIT license, running entirely inside your browser with no network access at all. Nothing about you or your browsing ever leaves your device."}},
       {"@type":"Question","name":"Does Nox slow down my browser?","acceptedAnswer":{"@type":"Answer","text":"No. Nox uses a single GPU-composited CSS filter toggled by one class on the page. No per-element loops, no observers, no polling. It runs fully offline."}},
       {"@type":"Question","name":"Which browsers does Nox support?","acceptedAnswer":{"@type":"Answer","text":"Any Chromium-based browser: Chrome, Edge, Brave, Arc, Vivaldi and Opera. Firefox is not yet supported."}},
       {"@type":"Question","name":"How do I install Nox?","acceptedAnswer":{"@type":"Answer","text":"Download the repository, open chrome://extensions, enable Developer mode, click Load unpacked, and select the folder. It takes about 30 seconds."}},
@@ -60,6 +61,7 @@
   </script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="icon-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol></svg>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="nav" id="top">
@@ -73,7 +75,7 @@
         <a href="#how">How it works</a>
         <a href="#privacy">Privacy</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-ghost" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener">★ Star</a>
+        <a class="btn btn-ghost" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-github"/></svg> Star</a>
         <a class="btn btn-primary" href="#how">Add to browser</a>
       </nav>
     </div>
@@ -84,6 +86,7 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
+        <a class="hero-badge" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-github"/></svg> Open source · MIT licensed</a>
         <p class="eyebrow">Dark mode that actually works</p>
         <h1>Force dark mode on <span class="accent">every website</span>.</h1>
         <p class="lead">
@@ -93,7 +96,7 @@
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="#how">Add to browser, free</a>
-          <a class="btn btn-ghost btn-lg" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener">★ Star on GitHub</a>
+          <a class="btn btn-ghost btn-lg" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-github"/></svg> Star on GitHub</a>
         </div>
         <ul class="chips">
           <li>Chrome · Edge · Brave</li>
@@ -198,7 +201,6 @@
             <p>Pin Nox 📌 to your toolbar, click the icon, and every page goes dark.</p>
           </li>
         </ol>
-        <div class="code-snippet"><code>$ nox: one class on &lt;html&gt;, GPU-composited, zero overhead</code></div>
         <p class="how-cta">
           <a class="btn btn-primary" href="https://github.com/kjshuvo/nox/archive/refs/heads/main.zip">⬇ Download the extension (.zip)</a>
           <a class="btn btn-ghost" href="https://github.com/kjshuvo/nox" target="_blank" rel="noopener">View on GitHub →</a>
@@ -248,6 +250,7 @@
         <div class="accordion">
           <details><summary>Does Nox work on GitHub, Google Docs and Google Sheets?</summary><p>Yes. Nox applies a real dark theme to any site, including the ones the browser's built-in dark mode ignores.</p></details>
           <details><summary>Is Nox private?</summary><p>Completely. No network requests, no telemetry, no servers, no account. Your settings never leave your browser.</p></details>
+          <details><summary>Why does Nox exist, and is it safe to use?</summary><p>Most dark-mode extensions are closed source, and many quietly send your data to external servers. Nox was built to be the opposite: fully open source under the MIT license, running entirely inside your browser with no network access at all. Nothing about you or your browsing ever leaves your device.</p></details>
           <details><summary>Does it slow down my browser?</summary><p>No. A single GPU-composited CSS filter, toggled by one class. No loops, observers or polling. Fully offline.</p></details>
           <details><summary>Which browsers are supported?</summary><p>Any Chromium browser: Chrome, Edge, Brave, Arc, Vivaldi, Opera. Firefox is not yet supported.</p></details>
           <details><summary>How do I install it?</summary><p>Download the repo, open <code>chrome://extensions</code>, enable Developer mode, click Load unpacked, and select the folder. About 30 seconds.</p></details>
