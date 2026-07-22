@@ -31,11 +31,11 @@ Chrome, Edge, and Brave all ship a dark-mode toggle, but it silently fails on ma
 > Looking for **dark mode for GitHub, Google Docs, or Google Sheets** — or a lightweight, privacy-first **Dark Reader alternative** that works fully offline? This is it.
 
 <!-- A short GIF of the toggle is the single biggest conversion lever — swap this pair for one when you have it. -->
-<p align="center"><em>Before</em> &nbsp;&nbsp;➡&nbsp;&nbsp; <em>After (one click)</em></p>
+<p align="center"><em>Light</em> &nbsp;&nbsp;➡&nbsp;&nbsp; <em>Dark (one click)</em></p>
 <table align="center">
   <tr>
-    <td><img src="docs/light.png" alt="Before — page in its default light theme" width="360"></td>
-    <td><img src="docs/dark.png" alt="After — same page with Nox on" width="360"></td>
+    <td><img src="docs/light.png" alt="Nox — page shown in its default light theme" width="360"></td>
+    <td><img src="docs/dark.png" alt="Nox — same page after enabling dark mode" width="360"></td>
   </tr>
 </table>
 
