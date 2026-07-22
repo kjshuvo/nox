@@ -5,6 +5,15 @@ All notable changes to **Nox** are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-07-22
+
+Docs and packaging refresh; no functional changes.
+
+### Changed
+- Swapped placeholder screenshots for the real before/after shots.
+- Simplified the install steps to three: download, load unpacked, pin.
+- Added a featured banner image to the README header.
+
 ## [1.0.0] - 2026-07-21
 
 First public release.
@@ -17,4 +26,5 @@ First public release.
 - Live updates in already-open tabs via `storage.onChanged`.
 - Minimal permissions (`activeTab`, `storage`) — no telemetry, no network requests.
 
+[1.0.1]: https://github.com/kjshuvo/nox/releases/tag/v1.0.1
 [1.0.0]: https://github.com/kjshuvo/nox/releases/tag/v1.0.0
